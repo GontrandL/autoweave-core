@@ -1,0 +1,61 @@
+{
+  "name": "@autoweave/core",
+  "version": "1.0.0",
+  "description": "Core engine for AutoWeave - The Self-Weaving Agent Orchestrator",
+  "main": "src/core/autoweave.js",
+  "exports": {
+    ".": "./src/core/autoweave.js",
+    "./agent-weaver": "./src/core/agent-weaver.js",
+    "./config-intelligence": "./src/core/config-intelligence.js",
+    "./services/agent-service": "./src/services/agent-service.js",
+    "./services/fresh-sources": "./src/services/fresh-sources-service.js",
+    "./utils/logger": "./src/utils/logger.js",
+    "./utils/retry": "./src/utils/retry.js",
+    "./utils/validation": "./src/utils/validation.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/ --ext .js",
+    "lint:fix": "eslint src/ --ext .js --fix"
+  },
+  "keywords": [
+    "autoweave",
+    "agents",
+    "orchestration",
+    "ai",
+    "openai",
+    "core"
+  ],
+  "author": "AutoWeave Team",
+  "license": "MIT",
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "axios": "^1.6.0",
+    "chalk": "^4.1.2",
+    "dotenv": "^16.3.0",
+    "express": "^4.18.0",
+    "node-fetch": "^2.7.0",
+    "openai": "^4.20.0",
+    "swagger-parser": "^10.0.3",
+    "ws": "^8.14.0",
+    "yaml": "^2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/autoweave/autoweave-core.git"
+  },
+  "files": [
+    "src/",
+    "config/",
+    "README.md",
+    "LICENSE"
+  ]
+}
